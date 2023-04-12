@@ -11,12 +11,12 @@ public class OutdoorTemperature {
         if (temperature > -5) {
             System.out.println("Warm.");
         }
-        else if (temperature <= -5 && temperature >= -20) {
-            System.out.println("Fine.");
+        else if (temperature >= -20) {
+            System.out.println("Fine1.");
         }
-        else
+        else {
             System.out.println("Cold.");
-
+        }
     }
 
 }
