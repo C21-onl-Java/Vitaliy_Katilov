@@ -4,16 +4,16 @@ public class MyFigures {
     public static void main(String[] args) {
 
         Circle circle = new Circle(70);
-        System.out.println("Площадь круга: \t\t\t\t" + circle.Area());
-        System.out.println("Периметр круга: \t\t\t" + circle.Perimeter());
+        System.out.println("Площадь круга: \t\t\t\t" + circle.calculateArea());
+        System.out.println("Периметр круга: \t\t\t" + circle.calculatePerimeter());
 
         Triangle triangle = new Triangle(30, 40, 50);
-        System.out.println("Площадь треугольника: \t\t" + triangle.Area());
-        System.out.println("Периметр треугольника: \t\t" + triangle.Perimeter());
+        System.out.println("Площадь треугольника: \t\t" + triangle.calculateArea());
+        System.out.println("Периметр треугольника: \t\t" + triangle.calculatePerimeter());
 
         Rectangle rectangle = new Rectangle(80, 40);
-        System.out.println("Площадь прямоугольника: \t" + rectangle.Area());
-        System.out.println("Периметр прямоугольника: \t" + rectangle.Perimeter());
+        System.out.println("Площадь прямоугольника: \t" + rectangle.calculateArea());
+        System.out.println("Периметр прямоугольника: \t" + rectangle.calculatePerimeter());
         System.out.println();
 
         Figures[] figures = new Figures[5];
@@ -25,7 +25,7 @@ public class MyFigures {
 
         float allPerimeter = 0f;
         for (int i = 0; i < 5; i++) {
-            allPerimeter += figures[i].Perimeter();
+            allPerimeter += figures[i].calculatePerimeter();
         }
             System.out.println("Периметр всех фигур в массиве: " + allPerimeter);
     }

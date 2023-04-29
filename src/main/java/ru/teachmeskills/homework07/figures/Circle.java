@@ -4,15 +4,16 @@ public class Circle extends Figures{
     private float r;
 
     public Circle(float r) {
+
         this.r = r;
     }
     @Override
-    public float Area() {
+    public float calculateArea() {
         return (float) Math.PI * (r * r);
     }
 
     @Override
-    public float Perimeter() {
+    public float calculatePerimeter() {
         return (float) (2 * Math.PI * r);
     }
 }

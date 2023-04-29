@@ -12,12 +12,12 @@ public class Triangle extends Figures{
         this.c = c;
     }
     @Override
-    public float Area() {
+    public float calculateArea() {
         float p = (a + b + c) / 2f;        //полупериметр треугольника
         return (float)  Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
     @Override
-    public float Perimeter() {
+    public float calculatePerimeter() {
         return a + b + c;
     }
 }

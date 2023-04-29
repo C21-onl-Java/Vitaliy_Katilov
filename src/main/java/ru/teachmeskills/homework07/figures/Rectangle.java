@@ -10,12 +10,12 @@ public class Rectangle extends Figures{
         this.width = width;
     }
     @Override
-    public float Area() {
+    public float calculateArea() {
         return this.length * this.width;
     }
 
     @Override
-    public float Perimeter() {
+    public float calculatePerimeter() {
         return this.length * 2 + this.width * 2;
     }
 }

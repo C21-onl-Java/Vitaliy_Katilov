@@ -2,6 +2,6 @@ package ru.teachmeskills.homework07.figures;
 
 public abstract class Figures {
 
-    public abstract float Area();
-    public abstract float Perimeter();
+    public abstract float calculateArea();
+    public abstract float calculatePerimeter();
 }
