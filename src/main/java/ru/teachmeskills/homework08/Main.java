@@ -28,7 +28,7 @@ public class Main {
             p.receiveCall(names[i++]);
         }
         System.out.println();
-        
+
         //Вызов метода getNumber() для каждого из объектов
         for (Phone p: phones) {
             System.out.println("Звонит " + p.getNumber());
